@@ -7,17 +7,50 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C68B7A712D3A1F600ADF8AC /* UISpec_1_0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C68B7A612D3A1F600ADF8AC /* UISpec_1_0.a */; };
+		3C68B7A912D3A27B00ADF8AC /* UISpec.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3C68B7A812D3A27B00ADF8AC /* UISpec.bundle */; };
+		3C68B7B312D3A4C100ADF8AC /* PlayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C68B7B212D3A4C100ADF8AC /* PlayerTests.m */; };
+		3C68B7BD12D3A6C800ADF8AC /* BinauralPlayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C68B7BB12D3A6C800ADF8AC /* BinauralPlayer.h */; };
+		3C68B7BE12D3A6C800ADF8AC /* BinauralPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C68B7BC12D3A6C800ADF8AC /* BinauralPlayer.m */; };
+		3C68B7BF12D3A6C800ADF8AC /* BinauralPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C68B7BC12D3A6C800ADF8AC /* BinauralPlayer.m */; };
 		AA747D9F0F9514B9006C5449 /* BinauralSoundEngine_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* BinauralSoundEngine_Prefix.pch */; };
 		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		3C68B7D312D3A9B500ADF8AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3C68B68312D39DCC00ADF8AC /* UnitTests */;
+			remoteInfo = UnitTests;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		3C68B68412D39DCC00ADF8AC /* UnitTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C68B68512D39DCC00ADF8AC /* UnitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UnitTests-Info.plist"; sourceTree = "<group>"; };
+		3C68B79512D3A04E00ADF8AC /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		3C68B7A612D3A1F600ADF8AC /* UISpec_1_0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = UISpec_1_0.a; path = "/Users/ian/src/uispec-read-only/bin/UISpec/UISpec_1_0.a"; sourceTree = "<absolute>"; };
+		3C68B7A812D3A27B00ADF8AC /* UISpec.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = UISpec.bundle; path = "/Users/ian/src/uispec-read-only/bin/UISpec/UISpec.bundle"; sourceTree = "<absolute>"; };
+		3C68B7B112D3A4C100ADF8AC /* PlayerTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerTests.h; sourceTree = "<group>"; };
+		3C68B7B212D3A4C100ADF8AC /* PlayerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerTests.m; sourceTree = "<group>"; };
+		3C68B7BB12D3A6C800ADF8AC /* BinauralPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BinauralPlayer.h; sourceTree = "<group>"; };
+		3C68B7BC12D3A6C800ADF8AC /* BinauralPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BinauralPlayer.m; sourceTree = "<group>"; };
 		AA747D9E0F9514B9006C5449 /* BinauralSoundEngine_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BinauralSoundEngine_Prefix.pch; sourceTree = SOURCE_ROOT; };
 		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D2AAC07E0554694100DB518D /* libBinauralSoundEngine.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBinauralSoundEngine.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		3C68B68112D39DCC00ADF8AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C68B7A712D3A1F600ADF8AC /* UISpec_1_0.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D2AAC07C0554694100DB518D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -33,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				D2AAC07E0554694100DB518D /* libBinauralSoundEngine.a */,
+				3C68B68412D39DCC00ADF8AC /* UnitTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -40,10 +74,12 @@
 		0867D691FE84028FC02AAC07 /* BinauralSoundEngine */ = {
 			isa = PBXGroup;
 			children = (
+				3C68B7B012D3A37D00ADF8AC /* Tests */,
 				08FB77AEFE84172EC02AAC07 /* Classes */,
 				32C88DFF0371C24200C91783 /* Other Sources */,
 				0867D69AFE84028FC02AAC07 /* Frameworks */,
 				034768DFFF38A50411DB9C8B /* Products */,
+				3C68B68512D39DCC00ADF8AC /* UnitTests-Info.plist */,
 			);
 			name = BinauralSoundEngine;
 			sourceTree = "<group>";
@@ -51,6 +87,8 @@
 		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3C68B7A612D3A1F600ADF8AC /* UISpec_1_0.a */,
+				3C68B79512D3A04E00ADF8AC /* CFNetwork.framework */,
 				AACBBE490F95108600F1A2B1 /* Foundation.framework */,
 			);
 			name = Frameworks;
@@ -59,6 +97,8 @@
 		08FB77AEFE84172EC02AAC07 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				3C68B7BB12D3A6C800ADF8AC /* BinauralPlayer.h */,
+				3C68B7BC12D3A6C800ADF8AC /* BinauralPlayer.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -66,9 +106,19 @@
 		32C88DFF0371C24200C91783 /* Other Sources */ = {
 			isa = PBXGroup;
 			children = (
+				3C68B7A812D3A27B00ADF8AC /* UISpec.bundle */,
 				AA747D9E0F9514B9006C5449 /* BinauralSoundEngine_Prefix.pch */,
 			);
 			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		3C68B7B012D3A37D00ADF8AC /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				3C68B7B112D3A4C100ADF8AC /* PlayerTests.h */,
+				3C68B7B212D3A4C100ADF8AC /* PlayerTests.m */,
+			);
+			name = Tests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -79,12 +129,31 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA747D9F0F9514B9006C5449 /* BinauralSoundEngine_Prefix.pch in Headers */,
+				3C68B7BD12D3A6C800ADF8AC /* BinauralPlayer.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		3C68B68312D39DCC00ADF8AC /* UnitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C68B68912D39DCC00ADF8AC /* Build configuration list for PBXNativeTarget "UnitTests" */;
+			buildPhases = (
+				3C68B67F12D39DCC00ADF8AC /* Resources */,
+				3C68B68012D39DCC00ADF8AC /* Sources */,
+				3C68B68112D39DCC00ADF8AC /* Frameworks */,
+				3C68B68212D39DCC00ADF8AC /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UnitTests;
+			productName = UnitTests;
+			productReference = 3C68B68412D39DCC00ADF8AC /* UnitTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
 		D2AAC07D0554694100DB518D /* BinauralSoundEngine */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "BinauralSoundEngine" */;
@@ -96,6 +165,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				3C68B7D412D3A9B500ADF8AC /* PBXTargetDependency */,
 			);
 			name = BinauralSoundEngine;
 			productName = BinauralSoundEngine;
@@ -123,19 +193,65 @@
 			projectRoot = "";
 			targets = (
 				D2AAC07D0554694100DB518D /* BinauralSoundEngine */,
+				3C68B68312D39DCC00ADF8AC /* UnitTests */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		3C68B67F12D39DCC00ADF8AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C68B7A912D3A27B00ADF8AC /* UISpec.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3C68B68212D39DCC00ADF8AC /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		3C68B68012D39DCC00ADF8AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C68B7B312D3A4C100ADF8AC /* PlayerTests.m in Sources */,
+				3C68B7BF12D3A6C800ADF8AC /* BinauralPlayer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D2AAC07B0554694100DB518D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C68B7BE12D3A6C800ADF8AC /* BinauralPlayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3C68B7D412D3A9B500ADF8AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3C68B68312D39DCC00ADF8AC /* UnitTests */;
+			targetProxy = 3C68B7D312D3A9B500ADF8AC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		1DEB921F08733DC00010E9CD /* Debug */ = {
@@ -197,6 +313,76 @@
 			};
 			name = Release;
 		};
+		3C68B68712D39DCC00ADF8AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				HEADER_SEARCH_PATHS = "/Users/ian/src/uispec-read-only/bin/UISpec/Headers";
+				INFOPLIST_FILE = "UnitTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../src/uispec-read-only/bin/UISpec\"",
+				);
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					SenTestingKit,
+					"-framework",
+					UIKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = UnitTests;
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		3C68B68812D39DCC00ADF8AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				HEADER_SEARCH_PATHS = "/Users/ian/src/uispec-read-only/bin/UISpec/Headers";
+				INFOPLIST_FILE = "UnitTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../src/uispec-read-only/bin/UISpec\"",
+				);
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					SenTestingKit,
+					"-framework",
+					UIKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = UnitTests;
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = octest;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -214,6 +400,15 @@
 			buildConfigurations = (
 				1DEB922308733DC00010E9CD /* Debug */,
 				1DEB922408733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C68B68912D39DCC00ADF8AC /* Build configuration list for PBXNativeTarget "UnitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C68B68712D39DCC00ADF8AC /* Debug */,
+				3C68B68812D39DCC00ADF8AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
